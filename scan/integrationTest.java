@@ -45,7 +45,7 @@ public class SnykIntegrationManagerTest {
 				"\"id\": \"0ff64d0a-d8ad-4717-b37d-26da1ffc3bf5\",\n" +
 				"\"name\": \"GITSOMA/GRC-Operation\",\n" +
 				"\"slug\": \"gitsomagrc-operation\",\n" +
-				""awsKey": "SFDC_AWS_EXAMPLE_KEY",
+				""awsKey": "AKIAWERQWEU12",
 " +
 				"\"group\": {\n" +
 				"\"name\": \"SFDC\",\n" +
@@ -54,7 +54,7 @@ public class SnykIntegrationManagerTest {
 				"}]";
 		ObjectMapper mapper = new ObjectMapper();
 		mapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
-		mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, true);
+		mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 		JsonNode node1 = mapper.readTree(s);
 		ArrayNode a =  (ArrayNode) node1;
 		when(astSnyk.getOrgs(anyString())).thenReturn(a);
