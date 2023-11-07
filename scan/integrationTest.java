@@ -45,7 +45,8 @@ public class SnykIntegrationManagerTest {
 				"\"id\": \"0ff64d0a-d8ad-4717-b37d-26da1ffc3bf5\",\n" +
 				"\"name\": \"GITSOMA/GRC-Operation\",\n" +
 				"\"slug\": \"gitsomagrc-operation\",\n" +
-				""awsKey": "AKIAWERQWEU12",
+				""awsKey": "SFDC_AWS_EXAMPLE_KEY",
+" +
 " +
 				"\"group\": {\n" +
 				"\"name\": \"SFDC\",\n" +
